@@ -7,7 +7,7 @@ on fs
 
 on early-fs
     start vold
-    
+
     service mtk.plpath.utils.link /vendor/bin/mtk_plpath_utils
     class main
     user root
@@ -30,7 +30,7 @@ service vendor.keymaster-4-1-trustonic /vendor/bin/hw/android.hardware.keymaster
     disabled
     oneshot
     seclabel u:r:recovery:s0
-    
+
 service keymaster_attestation-1-1 /vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
     user root
     group root
@@ -78,7 +78,7 @@ on boot
     start health-hal-2-1
     setprop sys.usb.config mtp,adb
     setprop sys.usb.state mtp,adb
-    setprop persist.sys.usb.config mtp,adb 
+    setprop persist.sys.usb.config mtp,adb
 
     on boot
  #Added Manual For Trustonic
