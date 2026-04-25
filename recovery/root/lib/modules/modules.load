@@ -130,6 +130,7 @@ mtk-socinfo.ko
 spi_slave.ko
 reset-ti-syscon.ko
 pmic_lbat_service.ko
+pmic_lvsys_notify.ko
 cmdq_helper_inf.ko
 zsmalloc.ko
 zram.ko

@@ -138,6 +138,7 @@ reset-ti-syscon.ko
 mtk_battery_oc_throttling.ko
 mtk_low_battery_throttling.ko
 pmic_lbat_service.ko
+pmic_lvsys_notify.ko
 mtk_dynamic_loading_throttling.ko
 cmdq_helper_inf.ko
 uload_ind.ko
