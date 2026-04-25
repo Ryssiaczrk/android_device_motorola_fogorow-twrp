@@ -62,7 +62,6 @@ on property:crypto.ready=0
     stop vendor.keymaster-4-1-trustonic
 
 on boot
-    start health-hal-2-1
     setprop sys.usb.config mtp,adb
     setprop sys.usb.state mtp,adb
     setprop persist.sys.usb.config mtp,adb
