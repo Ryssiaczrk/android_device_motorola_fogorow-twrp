@@ -8,7 +8,7 @@ echo '<manifest><project path="device/motorola/fogorow" name="korzenroot/android
 repo sync -j$(nproc --all)
 . build/envsetup.sh
 lunch twrp_fogorow-eng
-mka clean
+mka clean -j$(nproc --all)
 mka vendorbootimage -j$(nproc --all)
 fastboot flash vendor_boot out/target/product/fogorow/vendor_boot.img
 fastboot reboot recovery
