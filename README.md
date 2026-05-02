@@ -9,7 +9,7 @@ cat <<EOF > .repo/local_manifests/roomservice.xml
     <project path="device/motorola/fogorow" name="korzenroot/android_device_motorola_fogorow-twrp" remote="github" revision="main"/>
 </manifest>
 EOF
-repo sync -j$(nproc --all) -c --no-tags
+repo sync -c --no-tags
 . build/envsetup.sh
 lunch twrp_fogorow-eng
 mka clean -j$(nproc --all)
