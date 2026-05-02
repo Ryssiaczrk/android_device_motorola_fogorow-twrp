@@ -62,12 +62,6 @@ on property:crypto.ready=0
     stop vendor.keymaster-4-1-trustonic
 
 on boot
-    setprop sys.usb.config mtp,adb
-    setprop sys.usb.state mtp,adb
-    setprop persist.sys.usb.config mtp,adb
-
-    on boot
- #Added Manual For Trustonic
     mkdir /mnt/vendor/persist
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist rw
 
