@@ -14,4 +14,5 @@ repo sync
 lunch twrp_fogorow-eng
 mka clean -j$(nproc --all)
 mka vendorbootimage -j$(nproc --all)
+fastboot flash vendor_boot out/target/product/fogorow/vendor_boot.img
 ```
